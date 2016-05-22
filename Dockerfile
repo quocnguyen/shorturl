@@ -1,6 +1,6 @@
 FROM node:5.11
 
-MAINTAINER Van-Duyet Le <me@duyetdev.com>
+MAINTAINER quocnguyen <quocnguyen@clgt.vn>
 
 # Create app directory
 RUN mkdir -p /usr/src/app
