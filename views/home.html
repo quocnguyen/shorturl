@@ -106,6 +106,9 @@
   <div id="heading">
     <div id="logo">
       <form method="post">
+          {{#csrfToken}}
+          <input type="hidden" name="_csrf" value="{{csrfToken}}">
+          {{/csrfToken}}
           <input type="url" name="url" placeholder="Your url">
           <button type="submit">
             Short

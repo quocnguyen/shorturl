@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "consolidate": "0.14.1",
+    "cookie-parser": "1.4.2",
+    "csurf": "1.8.3",
     "debug": "2.2.0",
     "dotenv": "2.0.0",
     "finalhandler": "0.4.1",
@@ -19,6 +21,7 @@
     "level": "1.4.0",
     "mustache": "2.2.1",
     "router": "1.1.4",
-    "shortid": "2.2.6"
+    "shortid": "2.2.6",
+    "xtend": "4.0.1"
   }
 }
