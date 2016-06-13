@@ -14,6 +14,7 @@ $ git clone git://github.com/quocnguyen/shorturl.git
 $ cd shorturl
 $ cp .env-sample .env
 $ npm install
+```
 
 ## Config
 
@@ -25,7 +26,7 @@ you can config your app using the environment variables in `.env` file.
 | DB  | folder where shorturl store database  |
 | DOMAIN | your domain |
 
-```
+
 Start the application with
 ```
 npm start
