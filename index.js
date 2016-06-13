@@ -5,13 +5,8 @@
 
 'use strict';
 
-const path = require('path');
-
 // load .env file into process.env only if exists
-require('dotenv').config({
-  silent: true,
-  path: path.resolve(__dirname, '.env')
-});
+require('dotenv').config({ silent: true });
 
 // register hook before app start
 require('./lib/hook');
