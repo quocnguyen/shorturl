@@ -1,4 +1,4 @@
-FROM node:5.11
+FROM node:7.4-alpine
 
 MAINTAINER quocnguyen <quocnguyen@clgt.vn>
 
@@ -6,6 +6,8 @@ MAINTAINER quocnguyen <quocnguyen@clgt.vn>
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# need python to build leveldb
+RUN apk add --no-cache make gcc g++ python
 # Install NPM
 COPY package.json /usr/src/app/
 RUN npm install

@@ -1,0 +1,6 @@
+shorturl:
+  image: quocnguyen/shorturl
+  mem_limit: 100m
+  env_file: .env
+  volumes:
+    - ./db:/usr/src/app/db:rw
