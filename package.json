@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "NODE_ENV=development nodemon index",
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
