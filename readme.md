@@ -24,7 +24,7 @@ you can config your app using the environment variables in `.env` file.
 | ------------- | ------------- |
 | PORT  | the port shorturl will listen on  |
 | DB  | folder where shorturl store database  |
-| DOMAIN | your domain |
+| VIRTUAL_HOST | your domain without protocol |
 
 
 Start the application with
@@ -40,7 +40,7 @@ To quickly tryout shorturl on your machine with Docker, I have a Docker image th
 sudo docker run \
   -e DB=./db \
   -e PORT=6969 \
-  -e DOMAIN=http://localhost:6969 \
+  -e VIRTUAL_HOST=go.clgt.vn \
   --volume=/my/own/datadir:/usr/src/app/db:rw \
   --publish=3000:6969 \
   --detach=true \
