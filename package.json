@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon index",
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "consolidate": "0.14.1",
     "cookie-parser": "1.4.2",
     "csurf": "1.8.3",
@@ -19,10 +20,16 @@
     "dotenv": "2.0.0",
     "finalhandler": "0.4.1",
     "helmet": "2.1.0",
+    "is-absolute-url": "^2.1.0",
     "level": "1.5.0",
     "level-ttl": "^3.1.1",
     "mustache": "2.2.1",
     "router": "1.1.4",
     "shortid": "2.2.6"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "got": "^6.7.1",
+    "supertest": "^3.0.0"
   }
 }
